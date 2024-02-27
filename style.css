@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* variables */
+
+:root{
+    --theme_color:rgb(0, 191, 255);
+    --shape_color:rgba(0, 191, 255, 0.268)
+}
+
+/* HEADER */
+
+.header{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.nav{
+    height: 100px;
+    background-color:var(--theme_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav h3{
+    font-size: 90px;
+    color: aliceblue;
+    
+}
+
+/* BODY */
+
+
+.LOGIN-AREA{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 100px; */
+}
+
+
+.main-box{
+    position: absolute;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.BEFORE{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#login-btn{
+    margin-bottom: 10px;
+    appearance: auto;
+    background-color: #1877f2;
+    border: solid transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 16px;
+    border-radius: 15%;
+    height: 50px;
+    width: 100px;
+}
+
+#login-btn:hover{
+    background-color: #3f92ff;
+}
+
+
+
+#cna-btn{
+    margin-top: 10px;
+    appearance: auto;
+    background-color: rgb(23, 168, 23);
+    border: solid transparent;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 16px;
+    
+    height: 50px;
+    width: 200px;
+
+
+}
+
+#cna-btn:hover{
+    background-color: rgb(68, 215, 68);
+}   
+
+
+
+
+
+
+/* background */
+
+.shapes{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.shapes .shape{
+    height: 100px;
+    width: 100px;
+    background-color: var(--shape_color);
+    border-radius: 25%;
+    margin: 10px;
+    z-index: -1;
+    animation: animate  3s linear infinite;
+    animation-duration: calc(123s / var(--i));
+    
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0) rotate(0deg); 
+
+    }
+    100%{
+        transform: translateY(-10vh) scale(1) rotate(360deg) ;
+        
+        
+    }
+}
+
+
+
